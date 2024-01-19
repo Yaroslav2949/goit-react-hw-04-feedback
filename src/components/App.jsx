@@ -20,11 +20,13 @@ export const App = () => {
   };
 
   const addFeedback = option => {
-    if (option === good) setGood(prev => prev + 1);
-    if (option === neutral) setNeutral(prev => prev + 1);
-    if (option === bad) setBad(prev => prev + 1);
+    if (option === 'good') setGood(prev => prev + 1);
+    if (option === 'neutral') setNeutral(prev => prev + 1);
+    if (option === 'bad') setBad(prev => prev + 1);
+    //  console.log(option);
+     console.log(good);
   };
-
+ 
   return (
     <>
       <FeedBackContainer>
@@ -51,6 +53,9 @@ export const App = () => {
     </>
   );
 };
+
+
+
 
 // export class App extends Component {
 //   state = {
